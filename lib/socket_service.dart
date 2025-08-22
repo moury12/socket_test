@@ -17,7 +17,7 @@ class SocketService {
       'transports': ['websocket'],
       'autoConnect': true,       // Equivalent to .disableAutoConnect()
       'query': {'userId': userId},
-      'forceNew': true,           // 👈 THE FIX: Pass 'forceNew' as a key in the map
+      'forceNew': true,           
     };
     socket = IO.io(
       'http://18.211.171.8:8001',
